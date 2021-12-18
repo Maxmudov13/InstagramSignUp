@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		CEB723DA276E62D500260842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB723D9276E62D500260842 /* AppDelegate.swift */; };
 		CEB723DC276E62D500260842 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB723DB276E62D500260842 /* SceneDelegate.swift */; };
-		CEB723DE276E62D500260842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB723DD276E62D500260842 /* ViewController.swift */; };
 		CEB723E1276E62D500260842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB723DF276E62D500260842 /* Main.storyboard */; };
 		CEB723E3276E62D600260842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB723E2276E62D600260842 /* Assets.xcassets */; };
 		CEB723E6276E62D600260842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB723E4276E62D600260842 /* LaunchScreen.storyboard */; };
 		CEB723F1276E62D600260842 /* InstagramSignUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB723F0276E62D600260842 /* InstagramSignUpTests.swift */; };
 		CEB723FB276E62D700260842 /* InstagramSignUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB723FA276E62D700260842 /* InstagramSignUpUITests.swift */; };
 		CEB723FD276E62D700260842 /* InstagramSignUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB723FC276E62D700260842 /* InstagramSignUpUITestsLaunchTests.swift */; };
+		CEB7240D276E632200260842 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7240B276E632200260842 /* SignUpViewController.swift */; };
+		CEB7240E276E632200260842 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB7240C276E632200260842 /* SignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		CEB723D6276E62D500260842 /* InstagramSignUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSignUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB723D9276E62D500260842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB723DB276E62D500260842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEB723DD276E62D500260842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEB723E0276E62D500260842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEB723E2276E62D600260842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB723E5276E62D600260842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		CEB723F6276E62D700260842 /* InstagramSignUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramSignUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB723FA276E62D700260842 /* InstagramSignUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSignUpUITests.swift; sourceTree = "<group>"; };
 		CEB723FC276E62D700260842 /* InstagramSignUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSignUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEB7240B276E632200260842 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CEB7240C276E632200260842 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,11 @@
 		CEB723D8276E62D500260842 /* InstagramSignUp */ = {
 			isa = PBXGroup;
 			children = (
+				CEB7240A276E631100260842 /* Controller */,
 				CEB723D9276E62D500260842 /* AppDelegate.swift */,
 				CEB723DB276E62D500260842 /* SceneDelegate.swift */,
-				CEB723DD276E62D500260842 /* ViewController.swift */,
-				CEB723DF276E62D500260842 /* Main.storyboard */,
-				CEB723E2276E62D600260842 /* Assets.xcassets */,
-				CEB723E4276E62D600260842 /* LaunchScreen.storyboard */,
 				CEB723E7276E62D600260842 /* Info.plist */,
+				CEB72409276E62ED00260842 /* AppUtils */,
 			);
 			path = InstagramSignUp;
 			sourceTree = "<group>";
@@ -125,6 +125,25 @@
 				CEB723FC276E62D700260842 /* InstagramSignUpUITestsLaunchTests.swift */,
 			);
 			path = InstagramSignUpUITests;
+			sourceTree = "<group>";
+		};
+		CEB72409276E62ED00260842 /* AppUtils */ = {
+			isa = PBXGroup;
+			children = (
+				CEB723DF276E62D500260842 /* Main.storyboard */,
+				CEB723E2276E62D600260842 /* Assets.xcassets */,
+				CEB723E4276E62D600260842 /* LaunchScreen.storyboard */,
+			);
+			path = AppUtils;
+			sourceTree = "<group>";
+		};
+		CEB7240A276E631100260842 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7240B276E632200260842 /* SignUpViewController.swift */,
+				CEB7240C276E632200260842 /* SignUpViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +252,7 @@
 			files = (
 				CEB723E6276E62D600260842 /* LaunchScreen.storyboard in Resources */,
 				CEB723E3276E62D600260842 /* Assets.xcassets in Resources */,
+				CEB7240E276E632200260842 /* SignUpViewController.xib in Resources */,
 				CEB723E1276E62D500260842 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB723DE276E62D500260842 /* ViewController.swift in Sources */,
+				CEB7240D276E632200260842 /* SignUpViewController.swift in Sources */,
 				CEB723DA276E62D500260842 /* AppDelegate.swift in Sources */,
 				CEB723DC276E62D500260842 /* SceneDelegate.swift in Sources */,
 			);

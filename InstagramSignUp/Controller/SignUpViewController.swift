@@ -1,19 +1,16 @@
-//
-//  ViewController.swift
-//  InstagramSignUp
-//
-//  Created by user on 18/12/21.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
 
-}
 
+    // MARK: - Navigation
+
+
+}
